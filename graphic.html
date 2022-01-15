@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝐑𝐢𝐧𝐚'𝐬 𝐃𝐞𝐬𝐢𝐠𝐧 𝐏𝐨𝐫𝐭𝐟𝐨𝐥𝐢𝐨</title>
+    <link href="images/floppy.ico" rel="shortcut icon">
+    <link rel="stylesheet" href="style/graphic.css">
+    <script src="script/jquery.min.js"></script>
+    <script src="script/script.js"></script>
+    <script src="script/jquery.nicescroll.min.js"></script>
+
+    <script type="text/javascript" src="script/snowfall.jquery.min.js"></script>
+    <script type='text/javascript'>
+        $(document).ready(function () {
+            $(document).snowfall({
+                flakeCount: 50, //눈의 량을 수치로 기술
+                flakeColor: #fff, //눈의 색을 칼라코드로 입력
+                flakeIndex: 999, //눈의 레이어 겹치는 설정으로 z-index와 동일하게 설정
+                minSize: 2, //눈의 최소사이즈를 수치로 입력
+                maxSize: 5, //눈의 최대 사이즈를 수치로 입력
+                minSpeed: 1, //최저속도를 수치로 입력
+                maxSpeed: 10, //최대속도를 수치로 입력
+                round: true, //눈이 둥글면 true, 아니면 false
+                shadow: true //눈의 그림자가 있으면, 없으면 false
+            })
+        });
+    </script>
+</head>
+
+<body>
+
+
+    <section class="wrap">
+        <div class="pdfwrap">
+            <embed src="design.pdf" class="pdf" type="application/pdf" width="80%" height="700px" />
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <p>copyright © 2022 RINA All Rights Reserved</p>
+    </footer>
+
+
+    <window>
+        <div id="top_00"></div>
+        <div id="bottom_00"></div>
+        <div id="right_00"></div>
+        <div id="left_00"></div>
+        <div id="top_01"></div>
+        <div id="bottom_01"></div>
+        <div id="right_01"></div>
+        <div id="left_01"></div>
+        <div id="top_02"></div>
+        <div id="bottom_02"></div>
+        <div id="right_02"></div>
+        <div id="left_02"></div>
+        <div id="top_03"></div>
+        <div id="bottom_03"></div>
+        <div id="right_03"></div>
+        <div id="left_03"></div>
+        <div id="top_04"></div>
+        <div id="bottom_04"></div>
+        <div id="right_04"></div>
+        <div id="left_04"></div>
+        <div id="top_05"></div>
+        <div id="bottom_05"></div>
+        <div id="right_05"></div>
+        <div id="left_05"></div>
+        <div id="top_06"></div>
+        <div id="bottom_06"></div>
+        <div id="right_06"></div>
+        <div id="left_06"></div>
+        <div id="top_07"></div>
+        <div id="bottom_07"></div>
+        <div id="right_07"></div>
+        <div id="left_07"></div>
+        <div id="top_08"></div>
+        <div id="bottom_08"></div>
+        <div id="right_08"></div>
+        <div id="left_08"></div>
+        <div id="top_09"></div>
+        <div id="bottom_09"></div>
+        <div id="right_09"></div>
+        <div id="left_09"></div>
+        <div id="top_11"></div>
+        <div id="bottom_11"></div>
+        <div id="right_11"></div>
+        <div id="left_11"></div>
+        <div id="top_10"></div>
+        <div id="bottom_10"></div>
+        <div id="right_10"></div>
+        <div id="left_10"></div>
+        <div id="deagak_bottom_left_1"></div>
+        <div id="deagak_right_top_1"></div>
+        <div id="deagak_left_top_1"></div>
+        <div id="deagak_bottom_right_1"></div>
+        <div id="deagak_bottom_left_2"></div>
+        <div id="deagak_right_top_2"></div>
+        <div id="deagak_left_top_2"></div>
+        <div id="deagak_bottom_right_2"></div>
+        <div id="top_12"></div>
+        <div id="bottom_12"></div>
+        <div id="right_12"></div>
+        <div id="left_12"></div>
+
+        <!-- <div id="keyhole">
+            <img src="/images/img_keyhole.png">
+            <div id="keyhole_top">
+            </div>
+            <div id="keyhole_left">
+            </div>
+            <div id="keyhole_right">
+            </div>
+            <div id="keyhole_bottom">
+            </div>
+            <div id="khbg_L"></div>
+            <div id="khbg_R"></div>
+        </div> -->
+    </window>
+
+    <!--------------------------------------------------------------------------->
+    <!------------------------------ [ 창     문 ] ------------------------------>
+    <!-------------------------------- S T A R T -------------------------------->
+    <!--------------------------------------------------------------------------->
+    <!-- [ Left/Right 창문 ] start -->
+    <!--Left-->
+    <chang>
+        <input name="changmenu" id="chang_menu" type="checkbox" class="changmenu">
+        <label for="chang_menu" class="s_chang_bt_l"> </label>
+        <div class="chang_wrap_l">
+            <!-- 1. 윈도우st 미닫이 
+        <div class="top_00"></div> <div class="bottom_00"></div>  <div class="right_00"></div> <div class="left_00"></div>	
+        <div class="top_01"></div> <div class="bottom_01"></div>  <div class="right_01"></div> <div class="left_01"></div>	
+        <div class="top_02"></div> <div class="bottom_02"></div>  <div class="right_02"></div> <div class="left_02"></div>	
+        <div class="top_03"></div> <div class="bottom_03"></div>  <div class="right_03"></div> <div class="left_03"></div>	
+        <div class="top_04"></div> <div class="bottom_04"></div>  <div class="right_04"></div> <div class="left_04"></div>
+            <div class="top_05"></div> <div class="bottom_05"></div>  <div class="right_05"></div> <div class="left_05"></div>	
+        <div class="top_06"></div> <div class="bottom_06"></div>  <div class="right_06"></div> <div class="left_06"></div>	
+        <div class="top_07"></div> <div class="bottom_07"></div>  <div class="right_07"></div> <div class="left_07"></div>	
+        <div class="top_08"></div> <div class="bottom_08"></div>  <div class="right_08"></div> <div class="left_08"></div>	
+        <div class="top_09"></div> <div class="bottom_09"></div>  <div class="right_09"></div> <div class="left_09"></div>	
+        <div class="top_11"></div> <div class="bottom_11"></div>  <div class="right_11"></div> <div class="left_11"></div>	
+        <div class="top_10"></div> <div class="bottom_10"></div>  <div class="right_10"></div> <div class="left_10"></div>	
+        <div class="deagak_bottom_left_1"></div> <div class="deagak_right_top_1"></div>
+      <div class="deagak_left_top_1"></div> <div class="deagak_bottom_right_1"></div>
+        <div class="deagak_bottom_left_2"></div> <div class="deagak_right_top_2"></div>
+      <div class="deagak_left_top_2"></div> <div class="deagak_bottom_right_2"></div>	
+        <div class="top_12"></div> <div class="bottom_12"></div>
+      <div class="right_12"></div> <div class="left_12"></div>-->
+            <!-- 2. 기본창살 -->
+            <div class="tle1"></div>
+            <div class="tle2"></div>
+            <div class="tle3"></div>
+            <div class="tle4"></div>
+            <div class="sal1"></div>
+            <div class="sal2"></div>
+            <div class="sal3"></div>
+            <div class="sal4"></div>
+            <div class="sal5"></div>
+            <div class="sal6"></div>
+            <div class="sal7"></div>
+            <div class="sal8"></div>
+            <div class="sal9"></div>
+            <div class="sal10"></div>
+            <div class="sal11"></div>
+            <div class="sal12"></div>
+            <div class="sal13"></div>
+            <div class="sal14"></div>
+        </div>
+
+        <!--Right-->
+        <input name="changmenu" id="chang_menu" type="checkbox" class="changmenu">
+        <label for="chang_menu" class="s_chang_bt_r"> </label>
+        <div class="chang_wrap_r">
+            <!-- 1. 윈도우st 미닫이 
+        <div class="top_00"></div> <div class="bottom_00"></div>  <div class="right_00"></div> <div class="left_00"></div>	
+        <div class="top_01"></div> <div class="bottom_01"></div>  <div class="right_01"></div> <div class="left_01"></div>	
+        <div class="top_02"></div> <div class="bottom_02"></div>  <div class="right_02"></div> <div class="left_02"></div>	
+        <div class="top_03"></div> <div class="bottom_03"></div>  <div class="right_03"></div> <div class="left_03"></div>	
+        <div class="top_04"></div> <div class="bottom_04"></div>  <div class="right_04"></div> <div class="left_04"></div>
+            <div class="top_05"></div> <div class="bottom_05"></div>  <div class="right_05"></div> <div class="left_05"></div>	
+        <div class="top_06"></div> <div class="bottom_06"></div>  <div class="right_06"></div> <div class="left_06"></div>	
+        <div class="top_07"></div> <div class="bottom_07"></div>  <div class="right_07"></div> <div class="left_07"></div>	
+        <div class="top_08"></div> <div class="bottom_08"></div>  <div class="right_08"></div> <div class="left_08"></div>	
+        <div class="top_09"></div> <div class="bottom_09"></div>  <div class="right_09"></div> <div class="left_09"></div>	
+        <div class="top_11"></div> <div class="bottom_11"></div>  <div class="right_11"></div> <div class="left_11"></div>	
+        <div class="top_10"></div> <div class="bottom_10"></div>  <div class="right_10"></div> <div class="left_10"></div>	
+        <div class="deagak_bottom_left_1"></div> <div class="deagak_right_top_1"></div>
+      <div class="deagak_left_top_1"></div> <div class="deagak_bottom_right_1"></div>
+        <div class="deagak_bottom_left_2"></div> <div class="deagak_right_top_2"></div>
+      <div class="deagak_left_top_2"></div> <div class="deagak_bottom_right_2"></div>	
+        <div class="top_12"></div> <div class="bottom_12"></div>
+      <div class="right_12"></div> <div class="left_12"></div>-->
+            <!-- 2. 기본창살 -->
+            <div class="tle1"></div>
+            <div class="tle2"></div>
+            <div class="tle3"></div>
+            <div class="tle4"></div>
+            <div class="sal1"></div>
+            <div class="sal2"></div>
+            <div class="sal3"></div>
+            <div class="sal4"></div>
+            <div class="sal5"></div>
+            <div class="sal6"></div>
+            <div class="sal7"></div>
+            <div class="sal8"></div>
+            <div class="sal9"></div>
+            <div class="sal10"></div>
+            <div class="sal11"></div>
+            <div class="sal12"></div>
+            <div class="sal13"></div>
+            <div class="sal14"></div>
+        </div>
+    </chang>
+    <!-- [ Left/Right 창문 ] end -->
+    <!--------------------------------------------------------------------------->
+    <!------------------------------ [ 창     문 ] ------------------------------>
+    <!---------------------------------- E N D ---------------------------------->
+    <!--------------------------------------------------------------------------->
+
+
+    <!--------------------------------------------------------------------------->
+    <!------------------------------ [ 미 닫 이 ] ------------------------------>
+    <!-------------------------------- S T A R T -------------------------------->
+    <!--------------------------------------------------------------------------->
+    <!-- [ Left/Right 미닫이문 ] start -->
+    <!--Left-->
+    <midaji>
+        <input name="midajimenu" id="midaji_menu" type="checkbox" class="midajimenu">
+        <label for="midaji_menu" class="s_midaji_bt_l"> </label>
+        <div class="midaji_wrap_l">
+            <!-- 1. 윈도우st 미닫이 
+        <div class="top_00"></div> <div class="bottom_00"></div>  <div class="right_00"></div> <div class="left_00"></div>	
+        <div class="top_01"></div> <div class="bottom_01"></div>  <div class="right_01"></div> <div class="left_01"></div>	
+        <div class="top_02"></div> <div class="bottom_02"></div>  <div class="right_02"></div> <div class="left_02"></div>	
+        <div class="top_03"></div> <div class="bottom_03"></div>  <div class="right_03"></div> <div class="left_03"></div>	
+        <div class="top_04"></div> <div class="bottom_04"></div>  <div class="right_04"></div> <div class="left_04"></div>
+            <div class="top_05"></div> <div class="bottom_05"></div>  <div class="right_05"></div> <div class="left_05"></div>	
+        <div class="top_06"></div> <div class="bottom_06"></div>  <div class="right_06"></div> <div class="left_06"></div>	
+        <div class="top_07"></div> <div class="bottom_07"></div>  <div class="right_07"></div> <div class="left_07"></div>	
+        <div class="top_08"></div> <div class="bottom_08"></div>  <div class="right_08"></div> <div class="left_08"></div>	
+        <div class="top_09"></div> <div class="bottom_09"></div>  <div class="right_09"></div> <div class="left_09"></div>	
+        <div class="top_11"></div> <div class="bottom_11"></div>  <div class="right_11"></div> <div class="left_11"></div>	
+        <div class="top_10"></div> <div class="bottom_10"></div>  <div class="right_10"></div> <div class="left_10"></div>	
+        <div class="deagak_bottom_left_1"></div> <div class="deagak_right_top_1"></div>
+      <div class="deagak_left_top_1"></div> <div class="deagak_bottom_right_1"></div>
+        <div class="deagak_bottom_left_2"></div> <div class="deagak_right_top_2"></div>
+      <div class="deagak_left_top_2"></div> <div class="deagak_bottom_right_2"></div>	
+        <div class="top_12"></div> <div class="bottom_12"></div>
+      <div class="right_12"></div> <div class="left_12"></div>-->
+            <!-- 2. 기본창살 -->
+            <div class="tle1"></div>
+            <div class="tle2"></div>
+            <div class="tle3"></div>
+            <div class="tle4"></div>
+            <!--<div class="sal1"></div>
+                <div class="sal2"></div>
+                <div class="sal3"></div>
+                <div class="sal4"></div>
+                <div class="sal5"></div>
+                <div class="sal6"></div>
+                <div class="sal7"></div>			
+                <div class="sal8"></div>
+                <div class="sal9"></div>
+                <div class="sal10"></div>
+                <div class="sal11"></div>
+                <div class="sal12"></div>
+                <div class="sal13"></div>
+                <div class="sal14"></div>-->
+        </div>
+
+        <!--Right-->
+        <input name="midajimenu" id="midaji_menu" type="checkbox" class="midajimenu">
+        <label for="midaji_menu" class="s_midaji_bt_r"> </label>
+        <div class="midaji_wrap_r">
+            <!-- 1. 윈도우st 미닫이 
+        <div class="top_00"></div> <div class="bottom_00"></div>  <div class="right_00"></div> <div class="left_00"></div>	
+        <div class="top_01"></div> <div class="bottom_01"></div>  <div class="right_01"></div> <div class="left_01"></div>	
+        <div class="top_02"></div> <div class="bottom_02"></div>  <div class="right_02"></div> <div class="left_02"></div>	
+        <div class="top_03"></div> <div class="bottom_03"></div>  <div class="right_03"></div> <div class="left_03"></div>	
+        <div class="top_04"></div> <div class="bottom_04"></div>  <div class="right_04"></div> <div class="left_04"></div>
+            <div class="top_05"></div> <div class="bottom_05"></div>  <div class="right_05"></div> <div class="left_05"></div>	
+        <div class="top_06"></div> <div class="bottom_06"></div>  <div class="right_06"></div> <div class="left_06"></div>	
+        <div class="top_07"></div> <div class="bottom_07"></div>  <div class="right_07"></div> <div class="left_07"></div>	
+        <div class="top_08"></div> <div class="bottom_08"></div>  <div class="right_08"></div> <div class="left_08"></div>	
+        <div class="top_09"></div> <div class="bottom_09"></div>  <div class="right_09"></div> <div class="left_09"></div>	
+        <div class="top_11"></div> <div class="bottom_11"></div>  <div class="right_11"></div> <div class="left_11"></div>	
+        <div class="top_10"></div> <div class="bottom_10"></div>  <div class="right_10"></div> <div class="left_10"></div>	
+        <div class="deagak_bottom_left_1"></div> <div class="deagak_right_top_1"></div>
+      <div class="deagak_left_top_1"></div> <div class="deagak_bottom_right_1"></div>
+        <div class="deagak_bottom_left_2"></div> <div class="deagak_right_top_2"></div>
+      <div class="deagak_left_top_2"></div> <div class="deagak_bottom_right_2"></div>	
+        <div class="top_12"></div> <div class="bottom_12"></div>
+      <div class="right_12"></div> <div class="left_12"></div>-->
+            <!-- 2. 기본창살 -->
+            <div class="tle1"></div>
+            <div class="tle2"></div>
+            <div class="tle3"></div>
+            <div class="tle4"></div>
+            <!--<div class="sal1"></div>
+                <div class="sal2"></div>
+                <div class="sal3"></div>
+                <div class="sal4"></div>
+                <div class="sal5"></div>
+                <div class="sal6"></div>
+                <div class="sal7"></div>			
+                <div class="sal8"></div>
+                <div class="sal9"></div>
+                <div class="sal10"></div>
+                <div class="sal11"></div>
+                <div class="sal12"></div>
+                <div class="sal13"></div>
+                <div class="sal14"></div>-->
+        </div>
+    </midaji>
+    <!-- [ Left/Right Slide ] end -->
+    <!--------------------------------------------------------------------------->
+    <!------------------------------ [ 미 닫 이 ] ------------------------------>
+    <!---------------------------------- E N D ---------------------------------->
+    <!--------------------------------------------------------------------------->
+
+
+
+</body>
+
+</html>

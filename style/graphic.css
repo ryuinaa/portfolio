@@ -1,0 +1,2394 @@
+@charset "utf-8";
+
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    cursor: url("../cursor/cursor.cur"), progress !important;
+}
+
+/* 드래그 시 블러처리 */
+
+::selection {
+    color: transparent;
+    text-shadow: 0 0 3px #000;
+    transition: all 250ms ease-in;
+}
+
+::-moz-selection {
+    color: transparent;
+    text-shadow: 0 0 3px #000;
+    transition: all 250ms ease-in;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+
+html {
+    background: url("../images/maehwa.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.wrap{
+    width:100%;
+    height:100%;
+    text-align:center;
+}
+.pdfwrap{
+    margin-top:140px;
+}
+
+
+.footer{
+    position:fixed;
+    z-index: 999;
+    color:white;
+    opacity:.5;
+    text-align:center;
+    width:100%;
+    bottom:8px;
+    font-size:8px;
+}
+
+html,
+body,
+.wrap, .pdfwrap, embed, .pdf,
+input,
+textarea,
+.nicescroll-rails {
+    cursor: url("../cursor/cursor.cur"), progress !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===========================================================================
+✨✨✨✨✨✨✨✨✨✨🦋✨ ★ 동 양 풍 ★ ✨🦋✨✨✨✨✨✨✨✨✨✨
+=============================================================================*/
+/* 
+window{display:none;}
+chang{display:none;}
+midaji{display:none;}
+*/
+/* ===========================================================================
+ 미닫이
+=============================================================================*/
+/* Left Slide -------------------------------*/
+.s_midaji_bt_l {
+    position: fixed;
+    z-index: 61;
+    width: 50%;
+    height: 100%;
+    top: 0px;
+    left: 0;
+    background: rgba(0, 0, 0, .3);
+    transition: 1.5s ease;
+    -o-transition: 1.5s ease;
+    -moz-transition: 1.5s ease;
+    -webkit-transition: 1.5s ease;
+}
+
+.midaji_wrap_l {
+    position: fixed;
+    z-index: 60;
+    width: 50%;
+    height: 100%;
+    top: 0px;
+    left: 0;
+    /* -  + */
+    /*background: rgba(192,0,11,.9);*/
+    background: url("../images/BG_blackred.jpg") no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: left center;
+    background-attachment: fixed;
+    opacity: .9;
+    transition: 1.5s ease;
+    -o-transition: 1.5s ease;
+    -moz-transition: 1.5s ease;
+    -webkit-transition: 1.5s ease;
+}
+
+.midaji_wrap_l:after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0px 0px 125px 50px rgba(0, 0, 0, .75);
+    background: rgba(50, 29, 92, .0);
+    /* 이미지 위로 컬러를 입힘 */
+}
+
+input.midajimenu:checked~.midaji_wrap_l {
+    left: -48%;
+    transition: 1.5s;
+}
+
+input.midajimenu:checked~.s_midaji_bt_l {
+    left: -48%;
+    transition: 1.5s;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+/* Right Slide -------------------------------*/
+.s_midaji_bt_r {
+    position: fixed;
+    z-index: 61;
+    width: 50%;
+    height: 100%;
+    top: 0px;
+    right: 0;
+    background: rgba(0, 0, 0, .3);
+    transition: 1.5s ease;
+    -o-transition: 1.5s ease;
+    -moz-transition: 1.5s ease;
+    -webkit-transition: 1.5s ease;
+}
+
+.midaji_wrap_r {
+    position: fixed;
+    z-index: 60;
+    width: 50%;
+    height: 100%;
+    top: 0px;
+    right: 0;
+    /* -  + */
+    background: url("../images/BG_blackred.jpg") no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: right center;
+    background-attachment: fixed;
+    opacity: .9;
+    transition: 1.5s ease;
+    -o-transition: 1.5s ease;
+    -moz-transition: 1.5s ease;
+    -webkit-transition: 1.5s ease;
+    /*좌우반전 start transform:rotate(0deg); 
+   -moz-transform: scaleX(-1); 
+     -o-transform: scaleX(-1); 
+-webkit-transform: scaleX(-1); 
+        transform: scaleX(-1); 
+       filter: FlipH;
+  -ms-filter: "FlipH"; 좌우반전 end*/
+}
+
+.midaji_wrap_r:after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0px 0px 125px 50px rgba(0, 0, 0, .75);
+    background: rgba(22, 36, 34, .0);
+    /* 이미지 위로 컬러를 입힘 */
+}
+
+input.midajimenu:checked~.midaji_wrap_r {
+    right: -48%;
+    transition: 1.5s;
+}
+
+input.midajimenu:checked~.s_midaji_bt_r {
+    right: -48%;
+    transition: 1.5s;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+/*----------------------------------------------------------------------------*/
+.tle1 {
+    width: 100%;
+    height: 20px;
+    z-index: 63;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 0px;
+}
+
+.tle2 {
+    width: 100%;
+    height: 20px;
+    z-index: 63;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    bottom: 0px;
+}
+
+.tle3 {
+    width: 15px;
+    height: 100%;
+    z-index: 63;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    left: 0px;
+    top: 0px;
+}
+
+.tle4 {
+    width: 15px;
+    height: 100%;
+    z-index: 63;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    right: 0px;
+    top: 0px;
+}
+
+/*****************************************************************************/
+.sal1 {
+    width: 100%;
+    height: 15px;
+    z-index: 63;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 12.5%;
+}
+
+.sal2 {
+    width: 100%;
+    height: 15px;
+    z-index: 63;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 25%;
+}
+
+.sal3 {
+    width: 100%;
+    height: 15px;
+    z-index: 63;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 36.5%
+}
+
+.sal4 {
+    width: 100%;
+    height: 15px;
+    z-index: 63;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 50%;
+    margin-top: -7.5px;
+}
+
+.sal5 {
+    width: 100%;
+    height: 15px;
+    z-index: 63;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    bottom: 36.5%;
+}
+
+.sal6 {
+    width: 100%;
+    height: 15px;
+    z-index: 63;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    bottom: 25%;
+}
+
+.sal7 {
+    width: 100%;
+    height: 15px;
+    z-index: 63;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    bottom: 12.5%;
+}
+
+/****************************************************************************/
+.sal8 {
+    width: 15px;
+    height: 100%;
+    z-index: 63;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    left: 12.5%;
+}
+
+.sal9 {
+    width: 15px;
+    height: 100%;
+    z-index: 63;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    left: 25%;
+}
+
+.sal10 {
+    width: 15px;
+    height: 100%;
+    z-index: 63;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    left: 36.5%;
+}
+
+.sal11 {
+    width: 15px;
+    height: 100%;
+    z-index: 63;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    left: 50%;
+    margin-left: -7.5px;
+}
+
+.sal12 {
+    width: 15px;
+    height: 100%;
+    z-index: 63;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    right: 36.5%;
+}
+
+.sal13 {
+    width: 15px;
+    height: 100%;
+    z-index: 63;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    right: 25%;
+}
+
+.sal14 {
+    width: 15px;
+    height: 100%;
+    z-index: 63;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    right: 12.5%;
+}
+
+
+/******************************* W I N D O W *********************************/
+
+/*-- KEYHOLE --*/
+
+#keyhole_top {
+    position: fixed;
+    z-index: 57;
+    width: 75px;
+    height: 35px;
+    top: 0;
+    left: 50%;
+    margin-top: 12px;
+    margin-left: -43px;
+    background: url("../images/tle_juk.jpg")center center fixed;
+    border: 5px solid Black;
+    border-radius: 100px;
+}
+
+#keyhole_bottom {
+    position: fixed;
+    z-index: 57;
+    width: 75px;
+    height: 35px;
+    bottom: 0;
+    left: 50%;
+    margin-bottom: 12px;
+    margin-left: -43px;
+    background: url("../images/tle_juk.jpg")center center fixed;
+    border: 5px solid Black;
+    border-radius: 100px;
+}
+
+#keyhole_left {
+    position: fixed;
+    z-index: 51;
+    width: 35px;
+    height: 75px;
+    top: 50%;
+    left: 0;
+    margin-top: -43px;
+    margin-left: 95px;
+    background: url("../images/tle_juk.jpg")center center fixed;
+    border: 5px solid Black;
+    border-radius: 100px;
+}
+
+#keyhole_right {
+    position: fixed;
+    z-index: 51;
+    width: 35px;
+    height: 75px;
+    top: 50%;
+    right: 0;
+    margin-top: -43px;
+    margin-right: 95px;
+    background: url("../images/tle_juk.jpg")center center fixed;
+    border: 5px solid Black;
+    border-radius: 100px;
+}
+
+#khbg_L {
+    position: fixed;
+    z-index: 50;
+    width: 50px;
+    height: 16%;
+    background: url("../images/tle_juk.jpg");
+    top: 42%;
+    left: 0%;
+    margin-left: 93px;
+}
+
+#khbg_R {
+    position: fixed;
+    z-index: 50;
+    width: 50px;
+    height: 16%;
+    background: url("../images/tle_juk.jpg");
+    top: 42%;
+    right: 0%;
+    margin-right: 93px;
+}
+
+
+/**************하얀 면*************/
+#top_12 {
+    width: 100%;
+    height: 93px;
+    z-index: 51;
+    position: fixed;
+    background: url("../images/tle_baek.jpg");
+    opacity: .5;
+    top: 58px;
+}
+
+#bottom_12 {
+    width: 100%;
+    height: 93px;
+    z-index: 51;
+    position: fixed;
+    background: url("../images/tle_baek.jpg");
+    opacity: .5;
+    bottom: 58px;
+}
+
+#left_12 {
+    width: 93px;
+    height: 100%;
+    z-index: 51;
+    position: fixed;
+    background: url("../images/tle_baek.jpg");
+    opacity: .5;
+    left: 58px;
+    top: 0px;
+}
+
+#right_12 {
+    width: 93px;
+    height: 100%;
+    z-index: 51;
+    position: fixed;
+    background: url("../images/tle_baek.jpg");
+    opacity: .5;
+    right: 58px;
+    top: 0px;
+}
+
+/**대각 틀 면 10**/
+#top_10 {
+    top: 0px;
+    left: 0px;
+    opacity: .99;
+    width: 300px;
+    height: 300px;
+    z-index: 53;
+    position: fixed;
+    background-image: url("../images/tle_juk.jpg");
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+}
+
+#bottom_10 {
+    bottom: 0px;
+    left: 0px;
+    opacity: .99;
+    width: 300px;
+    height: 300px;
+    z-index: 53;
+    position: fixed;
+    background-image: url("../images/tle_juk.jpg");
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+
+#left_10 {
+    top: 0px;
+    right: 0px;
+    opacity: .99;
+    width: 300px;
+    height: 300px;
+    z-index: 53;
+    position: fixed;
+    background-image: url("../images/tle_juk.jpg");
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+
+#right_10 {
+    bottom: 0px;
+    right: 0px;
+    opacity: .99;
+    width: 300px;
+    height: 300px;
+    z-index: 53;
+    position: fixed;
+    background-image: url("../images/tle_juk.jpg");
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+
+#top_11 {
+    width: 100%;
+    height: 15px;
+    z-index: 52;
+    position: fixed;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 140px;
+}
+
+#bottom_11 {
+    width: 100%;
+    height: 15px;
+    z-index: 52;
+    position: fixed;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    bottom: 140px;
+}
+
+#left_11 {
+    width: 15px;
+    height: 100%;
+    z-index: 52;
+    position: fixed;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    left: 140px;
+    top: 0px;
+}
+
+#right_11 {
+    width: 15px;
+    height: 100%;
+    z-index: 52;
+    position: fixed;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    right: 140px;
+    top: 0px;
+}
+
+
+/***대각선***/
+/*#deagak_bottom_left_1{
+	width:350px; height:15px; z-index:53; position:fixed;
+	background: url("../images/tle_hyun.png") fixed;
+	-ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+	bottom:100px; left:-107px;}
+#deagak_right_top_1 {
+	width:350px; height:15px; z-index:53; position:fixed;
+	background: url("../images/tle_hyun.png") fixed;
+	-ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+	top:100px; right:-107px;}
+#deagak_left_top_1 {
+	width:350px; height:15px; z-index:53; position:fixed;
+	background: url("../images/tle_hyun.png") fixed;
+	-ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+	top:100px; left:-107px;}
+#deagak_bottom_right_1 {
+	width:350px; height:15px; z-index:53; position:fixed;
+	background: url("../images/tle_hyun.png") fixed;
+	-ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+	bottom:100px; right:-107px;}*/
+/**/
+#deagak_bottom_left_2 {
+    width: 500px;
+    height: 15px;
+    z-index: 53;
+    position: fixed;
+    background: url("../images/tle_hyun.png") fixed;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    bottom: 150px;
+    left: -112px;
+}
+
+#deagak_right_top_2 {
+    width: 500px;
+    height: 15px;
+    z-index: 53;
+    position: fixed;
+    background: url("../images/tle_hyun.png") fixed;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 150px;
+    right: -112px;
+}
+
+#deagak_left_top_2 {
+    width: 500px;
+    height: 15px;
+    z-index: 53;
+    position: fixed;
+    background: url("../images/tle_hyun.png") fixed;
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 150px;
+    left: -112px;
+}
+
+#deagak_bottom_right_2 {
+    width: 500px;
+    height: 15px;
+    z-index: 53;
+    position: fixed;
+    background: url("../images/tle_hyun.png") fixed;
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    bottom: 150px;
+    right: -112px;
+}
+
+
+
+#top_00 {
+    width: 100%;
+    height: 15px;
+    z-index: 54;
+    position: fixed;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 43px;
+}
+
+#bottom_00 {
+    width: 100%;
+    height: 15px;
+    z-index: 54;
+    position: fixed;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    bottom: 43px;
+}
+
+#left_00 {
+    width: 15px;
+    height: 100%;
+    z-index: 54;
+    position: fixed;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    left: 43px;
+    top: 0px;
+}
+
+#right_00 {
+    width: 15px;
+    height: 100%;
+    z-index: 54;
+    position: fixed;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    right: 43px;
+    top: 0px;
+}
+
+#top_01 {
+    width: 100%;
+    height: 18px;
+    z-index: 54;
+    position: fixed;
+    background: url("../images/tle_juk.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 25px;
+}
+
+#bottom_01 {
+    width: 100%;
+    height: 18px;
+    z-index: 54;
+    position: fixed;
+    background: url("../images/tle_juk.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    bottom: 25px;
+}
+
+#left_01 {
+    width: 18px;
+    height: 100%;
+    z-index: 54;
+    position: fixed;
+    background: url("../images/tle_juk.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    left: 25px;
+    top: 0px;
+}
+
+#right_01 {
+    width: 18px;
+    height: 100%;
+    z-index: 54;
+    position: fixed;
+    background: url("../images/tle_juk.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    right: 25px;
+    top: 0px;
+}
+
+#top_02 {
+    width: 100%;
+    height: 25px;
+    z-index: 55;
+    position: fixed;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 0px;
+}
+
+#bottom_02 {
+    width: 100%;
+    height: 25px;
+    z-index: 55;
+    position: fixed;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    bottom: 0px;
+}
+
+#left_02 {
+    width: 25px;
+    height: 100%;
+    z-index: 55;
+    position: fixed;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    left: 0px;
+    top: 0px;
+}
+
+#right_02 {
+    width: 25px;
+    height: 100%;
+    z-index: 55;
+    position: fixed;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    right: 0px;
+    top: 0px;
+}
+
+#top_03 {
+    width: 100%;
+    height: 15px;
+    z-index: 52;
+    position: fixed;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 80px;
+}
+
+#bottom_03 {
+    width: 100%;
+    height: 15px;
+    z-index: 52;
+    position: fixed;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    bottom: 80px;
+}
+
+#left_03 {
+    width: 15px;
+    height: 100%;
+    z-index: 52;
+    position: fixed;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    left: 80px;
+    top: 0px;
+}
+
+#right_03 {
+    width: 15px;
+    height: 100%;
+    z-index: 52;
+    position: fixed;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    right: 80px;
+    top: 0px;
+}
+
+/*꾸밈창살*/
+#top_04 {
+    width: 80px;
+    height: 15px;
+    z-index: 52;
+    position: fixed;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 45%;
+}
+
+/*왼쪽 안쪽-위*/
+#bottom_04 {
+    width: 80px;
+    height: 15px;
+    z-index: 52;
+    position: fixed;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    bottom: 45%;
+}
+
+/*왼쪽 안쪽-아래*/
+#left_04 {
+    width: 15px;
+    height: 80px;
+    z-index: 52;
+    position: fixed;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    left: 45%;
+    top: 0px;
+}
+
+/*위쪽 안쪽-첫번째*/
+#right_04 {
+    width: 15px;
+    height: 80px;
+    z-index: 52;
+    position: fixed;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    right: 45%;
+    top: 0px;
+}
+
+/*위쪽 안쪽-두번째*/
+
+
+/** MIDDLE **/
+#top_05 {
+    width: 15px;
+    height: 80px;
+    z-index: 52;
+    position: fixed;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    bottom: 0;
+    left: 45%;
+}
+
+/*아래쪽 안쪽-첫번째*/
+#bottom_05 {
+    width: 15px;
+    height: 80px;
+    z-index: 52;
+    position: fixed;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    bottom: 0;
+    right: 45%;
+}
+
+/*아래쪽 안쪽-두번째*/
+#left_05 {
+    width: 80px;
+    height: 15px;
+    z-index: 52;
+    position: fixed;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 45%;
+    right: 0;
+}
+
+/*오른쪽 안쪽-첫번째*/
+#right_05 {
+    width: 80px;
+    height: 15px;
+    z-index: 52;
+    position: fixed;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    bottom: 45%;
+    right: 0;
+}
+
+/*오른쪽 안쪽-두번째*/
+
+/**왼쪽중간**/
+#top_06 {
+    width: 145px;
+    height: 15px;
+    z-index: 52;
+    position: fixed;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 58%;
+}
+
+/*왼쪽 바깥쪽-아래*/
+#bottom_06 {
+    width: 145px;
+    height: 15px;
+    z-index: 52;
+    position: fixed;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    bottom: 58%;
+}
+
+/*왼쪽 바깥쪽-위*/
+
+#left_06 {
+    width: 15px;
+    height: 150px;
+    z-index: 52;
+    position: fixed;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    left: 58%;
+    top: 0px;
+}
+
+/*위쪽 바깥쪽-두번째*/
+#right_06 {
+    width: 15px;
+    height: 150px;
+    z-index: 52;
+    position: fixed;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    right: 58%;
+    top: 0px;
+}
+
+/*위쪽 바깥쪽-첫번째*/
+
+#top_07 {
+    width: 15px;
+    height: 150px;
+    z-index: 52;
+    position: fixed;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    bottom: 0;
+    left: 58%;
+}
+
+/*아래쪽 바깥쪽-두번째*/
+#bottom_07 {
+    width: 15px;
+    height: 150px;
+    z-index: 52;
+    position: fixed;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    bottom: 0;
+    right: 58%;
+}
+
+/*아래쪽 바깥쪽-첫번째*/
+#left_07 {
+    width: 150px;
+    height: 15px;
+    z-index: 52;
+    position: fixed;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 58%;
+    right: 0;
+}
+
+/*오른쪽 바깥쪽-아래*/
+#right_07 {
+    width: 150px;
+    height: 15px;
+    z-index: 52;
+    position: fixed;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    bottom: 58%;
+    right: 0;
+}
+
+/*오른쪽 바깥쪽-위*/
+
+
+/***************************/
+#top_08 {
+    width: 215px;
+    height: 15px;
+    z-index: 52;
+    position: fixed;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 200px;
+    left: 0px;
+}
+
+#bottom_08 {
+    width: 15px;
+    height: 215px;
+    z-index: 52;
+    position: fixed;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 0px;
+    left: 200px;
+}
+
+#left_08 {
+    width: 215px;
+    height: 15px;
+    z-index: 52;
+    position: fixed;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    bottom: 200px;
+    left: 0px;
+}
+
+#right_08 {
+    width: 15px;
+    height: 215px;
+    z-index: 52;
+    position: fixed;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    left: 200px;
+    bottom: 0px;
+}
+
+#top_09 {
+    width: 15px;
+    height: 215px;
+    z-index: 52;
+    position: fixed;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 0px;
+    right: 200px;
+}
+
+#bottom_09 {
+    width: 215px;
+    height: 15px;
+    z-index: 52;
+    position: fixed;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 200px;
+    right: 0px;
+}
+
+#left_09 {
+    width: 15px;
+    height: 215px;
+    z-index: 52;
+    position: fixed;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    bottom: 0px;
+    right: 200px;
+}
+
+#right_09 {
+    width: 215px;
+    height: 15px;
+    z-index: 52;
+    position: fixed;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    bottom: 200px;
+    right: 0px;
+}
+
+
+
+
+
+
+
+
+/* ===========================================================================
+ 창    문
+=============================================================================*/
+/* Left Slide -------------------------------*/
+.s_chang_bt_l {
+    position: fixed;
+    z-index: 53;
+    width: 50%;
+    height: 100%;
+    top: 0px;
+    left: 0;
+    background: rgba(0, 0, 0, .1);
+    transition: 1.5s ease;
+    -o-transition: 1.5s ease;
+    -moz-transition: 1.5s ease;
+    -webkit-transition: 1.5s ease;
+}
+
+.chang_wrap_l {
+    position: fixed;
+    z-index: 52;
+    width: 50%;
+    height: 100%;
+    top: 0px;
+    left: 0;
+    /* -  + */
+    background: #ffbdd8;
+    /*rgba(192,0,11,.0);*/
+    /* 이미지 위로 컬러를 입힘 */
+    opacity: .93;
+    transition: 1.5s ease;
+    -o-transition: 1.5s ease;
+    -moz-transition: 1.5s ease;
+    -webkit-transition: 1.5s ease;
+}
+
+.chang_wrap_l:before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0px 0px 125px 50px rgba(0, 0, 0, .75);
+    background: url("../images/tle_baek.jpg") no-repeat center right;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: .5;
+}
+
+.chang_wrap_l:after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, .5),
+        inset 0 0 100px rgba(0, 0, 0, .5);
+    background: url("../images/shashasha.png") no-repeat center right;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+input.changmenu:checked~.chang_wrap_l {
+    left: -42.5%;
+    transition: 1.5s;
+}
+
+input.changmenu:checked~.s_chang_bt_l {
+    left: -42.5%;
+    transition: 1.5s;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+/* Right Slide -------------------------------*/
+.s_chang_bt_r {
+    position: fixed;
+    z-index: 53;
+    width: 50%;
+    height: 100%;
+    top: 0px;
+    right: 0;
+    background: rgba(0, 0, 0, .1);
+    transition: 1.5s ease;
+    -o-transition: 1.5s ease;
+    -moz-transition: 1.5s ease;
+    -webkit-transition: 1.5s ease;
+}
+
+.chang_wrap_r {
+    position: fixed;
+    z-index: 52;
+    width: 50%;
+    height: 100%;
+    top: 0px;
+    right: 0;
+    /* -  + */
+    background: #ffbdd8;
+    /*rgba(192,0,11,.0);*/
+    /* 이미지 위로 컬러를 입힘 */
+    opacity: .93;
+    transition: 1.5s ease;
+    -o-transition: 1.5s ease;
+    -moz-transition: 1.5s ease;
+    -webkit-transition: 1.5s ease;
+}
+
+.chang_wrap_r:before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0px 0px 125px 50px rgba(0, 0, 0, .75);
+    background: url("../images/tle_baek.jpg") no-repeat center right;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: .5;
+}
+
+.chang_wrap_r:after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, .5),
+        inset 0 0 100px rgba(0, 0, 0, .5);
+    background: url("../images/shashasha.png") no-repeat center right;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    transform: rotate(0deg);
+    /*좌우반전 start*/
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+    /*좌우반전 end*/
+}
+
+input.changmenu:checked~.chang_wrap_r {
+    right: -42.5%;
+    transition: 1.5s;
+}
+
+input.changmenu:checked~.s_chang_bt_r {
+    right: -42.5%;
+    transition: 1.5s;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+/******************************************************************************/
+/*창틀스타일*/
+.top_00 {
+    width: 100%;
+    height: 15px;
+    z-index: 54;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 43px;
+}
+
+.bottom_00 {
+    width: 100%;
+    height: 15px;
+    z-index: 54;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    bottom: 43px;
+}
+
+.left_00 {
+    width: 15px;
+    height: 100%;
+    z-index: 54;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    left: 43px;
+    top: 0px;
+}
+
+.right_00 {
+    width: 15px;
+    height: 100%;
+    z-index: 54;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    right: 43px;
+    top: 0px;
+}
+
+.top_01 {
+    width: 100%;
+    height: 18px;
+    z-index: 54;
+    position: absolute;
+    background: url("../images/tle_juk.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 25px;
+}
+
+.bottom_01 {
+    width: 100%;
+    height: 18px;
+    z-index: 54;
+    position: absolute;
+    background: url("../images/tle_juk.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    bottom: 25px;
+}
+
+.left_01 {
+    width: 18px;
+    height: 100%;
+    z-index: 54;
+    position: absolute;
+    background: url("../images/tle_juk.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    left: 25px;
+    top: 0px;
+}
+
+.right_01 {
+    width: 18px;
+    height: 100%;
+    z-index: 54;
+    position: absolute;
+    background: url("../images/tle_juk.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    right: 25px;
+    top: 0px;
+}
+
+.top_02 {
+    width: 100%;
+    height: 25px;
+    z-index: 55;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 0px;
+}
+
+.bottom_02 {
+    width: 100%;
+    height: 25px;
+    z-index: 55;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    bottom: 0px;
+}
+
+.left_02 {
+    width: 25px;
+    height: 100%;
+    z-index: 55;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    left: 0px;
+    top: 0px;
+}
+
+.right_02 {
+    width: 25px;
+    height: 100%;
+    z-index: 55;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    right: 0px;
+    top: 0px;
+}
+
+.top_03 {
+    width: 100%;
+    height: 15px;
+    z-index: 56;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 80px;
+}
+
+.bottom_03 {
+    width: 100%;
+    height: 15px;
+    z-index: 56;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    bottom: 80px;
+}
+
+.left_03 {
+    width: 15px;
+    height: 100%;
+    z-index: 56;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    left: 80px;
+    top: 0px;
+}
+
+.right_03 {
+    width: 15px;
+    height: 100%;
+    z-index: 56;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    right: 80px;
+    top: 0px;
+}
+
+/*꾸밈창살*/
+.top_04 {
+    width: 80px;
+    height: 15px;
+    z-index: 57;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 45%;
+}
+
+/*왼쪽 안쪽-위*/
+.bottom_04 {
+    width: 80px;
+    height: 15px;
+    z-index: 57;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    bottom: 45%;
+}
+
+/*왼쪽 안쪽-아래*/
+.left_04 {
+    width: 15px;
+    height: 80px;
+    z-index: 57;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    left: 45%;
+    top: 0px;
+}
+
+/*위쪽 안쪽-첫번째*/
+.right_04 {
+    width: 15px;
+    height: 80px;
+    z-index: 57;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    right: 45%;
+    top: 0px;
+}
+
+/*위쪽 안쪽-두번째*/
+
+.top_05 {
+    width: 15px;
+    height: 80px;
+    z-index: 57;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    bottom: 0;
+    left: 45%;
+}
+
+/*아래쪽 안쪽-첫번째*/
+.bottom_05 {
+    width: 15px;
+    height: 80px;
+    z-index: 57;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    bottom: 0;
+    right: 45%;
+}
+
+/*아래쪽 안쪽-두번째*/
+.left_05 {
+    width: 80px;
+    height: 15px;
+    z-index: 57;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 45%;
+    right: 0;
+}
+
+/*오른쪽 안쪽-첫번째*/
+.right_05 {
+    width: 80px;
+    height: 15px;
+    z-index: 57;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    bottom: 45%;
+    right: 0;
+}
+
+/*오른쪽 안쪽-두번째*/
+
+.top_06 {
+    width: 150px;
+    height: 15px;
+    z-index: 57;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 58%;
+}
+
+/*왼쪽 바깥쪽-아래*/
+.bottom_06 {
+    width: 150px;
+    height: 15px;
+    z-index: 57;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    bottom: 58%;
+}
+
+/*왼쪽 바깥쪽-위*/
+.left_06 {
+    width: 15px;
+    height: 150px;
+    z-index: 57;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    left: 58%;
+    top: 0px;
+}
+
+/*위쪽 바깥쪽-두번째*/
+.right_06 {
+    width: 15px;
+    height: 150px;
+    z-index: 57;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    right: 58%;
+    top: 0px;
+}
+
+/*위쪽 바깥쪽-첫번째*/
+
+.top_07 {
+    width: 15px;
+    height: 150px;
+    z-index: 57;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    bottom: 0;
+    left: 58%;
+}
+
+/*아래쪽 바깥쪽-두번째*/
+.bottom_07 {
+    width: 15px;
+    height: 150px;
+    z-index: 57;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    bottom: 0;
+    right: 58%;
+}
+
+/*아래쪽 바깥쪽-첫번째*/
+.left_07 {
+    width: 150px;
+    height: 15px;
+    z-index: 57;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 58%;
+    right: 0;
+}
+
+/*오른쪽 바깥쪽-아래*/
+.right_07 {
+    width: 150px;
+    height: 15px;
+    z-index: 57;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    bottom: 58%;
+    right: 0;
+}
+
+/*오른쪽 바깥쪽-위*/
+
+/***대각선***/
+/***바깥대각선***/
+.deagak_bottom_left_1 {
+    width: 200px;
+    height: 15px;
+    z-index: 53;
+    position: absolute;
+    background: url("../images/tle_hyun.png") fixed;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    bottom: 80px;
+    left: -12px;
+}
+
+.deagak_right_top_1 {
+    width: 200px;
+    height: 15px;
+    z-index: 53;
+    position: absolute;
+    background: url("../images/tle_hyun.png") fixed;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 80px;
+    right: -12px;
+}
+
+.deagak_left_top_1 {
+    width: 200px;
+    height: 15px;
+    z-index: 53;
+    position: absolute;
+    background: url("../images/tle_hyun.png") fixed;
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 80px;
+    left: -12px;
+}
+
+.deagak_bottom_right_1 {
+    width: 200px;
+    height: 15px;
+    z-index: 53;
+    position: absolute;
+    background: url("../images/tle_hyun.png") fixed;
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    bottom: 80px;
+    right: -12px;
+}
+
+/***/
+/***안쪽대각선***/
+.deagak_bottom_left_2 {
+    width: 300px;
+    height: 15px;
+    z-index: 53;
+    position: absolute;
+    background: url("../images/tle_hyun.png") fixed;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    bottom: 141px;
+    left: -3px;
+}
+
+.deagak_right_top_2 {
+    width: 300px;
+    height: 15px;
+    z-index: 53;
+    position: absolute;
+    background: url("../images/tle_hyun.png") fixed;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 141px;
+    right: -3px;
+}
+
+.deagak_left_top_2 {
+    width: 300px;
+    height: 15px;
+    z-index: 53;
+    position: absolute;
+    background: url("../images/tle_hyun.png") fixed;
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 141px;
+    left: -3px;
+}
+
+.deagak_bottom_right_2 {
+    width: 300px;
+    height: 15px;
+    z-index: 53;
+    position: absolute;
+    background: url("../images/tle_hyun.png") fixed;
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    bottom: 141px;
+    right: -3px;
+}
+
+
+
+.top_08 {
+    width: 215px;
+    height: 15px;
+    z-index: 57;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 200px;
+    left: 0px;
+}
+
+.bottom_08 {
+    width: 15px;
+    height: 215px;
+    z-index: 57;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 0px;
+    left: 200px;
+}
+
+.left_08 {
+    width: 215px;
+    height: 15px;
+    z-index: 57;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    bottom: 200px;
+    left: 0px;
+}
+
+.right_08 {
+    width: 15px;
+    height: 215px;
+    z-index: 57;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    left: 200px;
+    bottom: 0px;
+}
+
+.top_09 {
+    width: 15px;
+    height: 215px;
+    z-index: 57;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 0px;
+    right: 200px;
+}
+
+.bottom_09 {
+    width: 215px;
+    height: 15px;
+    z-index: 57;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 200px;
+    right: 0px;
+}
+
+.left_09 {
+    width: 15px;
+    height: 215px;
+    z-index: 57;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    bottom: 0px;
+    right: 200px;
+}
+
+.right_09 {
+    width: 215px;
+    height: 15px;
+    z-index: 57;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    bottom: 200px;
+    right: 0px;
+}
+
+/************************ 대각 틀 면 ************************/
+
+.top_10 {
+    top: 0px;
+    left: 0px;
+    opacity: .9;
+    width: 300px;
+    height: 300px;
+    z-index: 52;
+    position: absolute;
+    background-image: url("../images/tle_juk.jpg");
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+}
+
+.bottom_10 {
+    bottom: 0px;
+    left: 0px;
+    opacity: .9;
+    width: 300px;
+    height: 300px;
+    z-index: 52;
+    position: absolute;
+    background-image: url("../images/tle_juk.jpg");
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+
+.left_10 {
+    top: 0px;
+    right: 0px;
+    opacity: .9;
+    width: 300px;
+    height: 300px;
+    z-index: 52;
+    position: absolute;
+    background-image: url("../images/tle_juk.jpg");
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+
+.right_10 {
+    bottom: 0px;
+    right: 0px;
+    opacity: .9;
+    width: 300px;
+    height: 300px;
+    z-index: 52;
+    position: absolute;
+    background-image: url("../images/tle_juk.jpg");
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+
+
+.top_11 {
+    width: 100%;
+    height: 15px;
+    z-index: 52;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 140px;
+}
+
+.bottom_11 {
+    width: 100%;
+    height: 15px;
+    z-index: 52;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    bottom: 140px;
+}
+
+.left_11 {
+    width: 15px;
+    height: 100%;
+    z-index: 52;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    left: 140px;
+    top: 0px;
+}
+
+.right_11 {
+    width: 15px;
+    height: 100%;
+    z-index: 52;
+    position: absolute;
+    background: url("../images/tle_hyun.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    right: 140px;
+    top: 0px;
+}
+
+.top_12 {
+    width: 100%;
+    height: 93px;
+    z-index: 51;
+    position: absolute;
+    opacity: .7;
+    background: url("../images/tle_baek.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 58px;
+}
+
+.bottom_12 {
+    width: 100%;
+    height: 93px;
+    z-index: 51;
+    position: absolute;
+    opacity: .7;
+    background: url("../images/tle_baek.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    bottom: 58px;
+}
+
+.left_12 {
+    width: 93px;
+    height: 100%;
+    z-index: 51;
+    position: absolute;
+    opacity: .7;
+    background: url("../images/tle_baek.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    left: 58px;
+    top: 0px;
+}
+
+.right_12 {
+    width: 93px;
+    height: 100%;
+    z-index: 51;
+    position: absolute;
+    opacity: .7;
+    background: url("../images/tle_baek.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    right: 58px;
+    top: 0px;
+}

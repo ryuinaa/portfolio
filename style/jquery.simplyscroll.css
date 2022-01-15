@@ -1,0 +1,87 @@
+/*
+ * simplyScroll 2 - a scroll-tastic jQuery plugin
+ *
+ * http://logicbox.net/jquery/simplyscroll
+ *
+ * Copyright (c) 2009-2012 Will Kelly - http://logicbox.net
+ *
+ * Dual licensed under the MIT and GPL licenses.
+ *
+ * Last revised: 31/01/2012
+ *
+ */
+
+/* Default/Master classes 
+
+Example markup format (for horizontal scroller)
+Note all DIVs are generated and should not be hard-coded
+
+<div class="your-custom-class simply-scroll-container">
+	<div class="simply-scroll-clip">
+		<ul class="simply-scroll-list">
+			<li>...</li>
+			...
+		</ul>
+	</div>
+</div>
+
+
+*/
+
+.simply-scroll-container { /* Container DIV - automatically generated */
+	position: relative;
+}
+
+	.simply-scroll-clip { /* Clip DIV - automatically generated */
+		position: relative;
+		overflow: hidden;
+	}
+
+	.simply-scroll-list { /* UL/OL/DIV - the element that simplyScroll is inited on */
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	
+		.simply-scroll-list li {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+	
+		.simply-scroll-list li img {
+			border: none;
+			display: block;
+		}
+	
+
+/* Custom class modifications - override classees
+
+.simply-scroll is default
+
+*/
+#scroller li{
+	line-height:45px;
+}
+#scroller li:nth-child(2n){
+	background:skyblue;
+}
+.simply-scroll { /* Customisable base class for style override DIV */
+	width: auto;
+	height: 45px;
+	/* background:black; */
+	color:white;
+	text-align:center;
+}
+
+	.simply-scroll .simply-scroll-clip {
+		width: 100%;
+		height: 45px;
+	}
+		
+		.simply-scroll .simply-scroll-list li {
+			float: left;
+			width: 290px;
+			height: 45px;
+		}
