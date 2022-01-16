@@ -2,10 +2,10 @@ $(function () {
 
     //index [ keyhole hover > img ]
     $(".click").mouseover(function () {
-        $(".veil").fadeIn(300);
+        $(".veil").fadeIn(300)
     });
     $(".click").mouseleave(function () {
-        $(".veil").fadeOut(300);
+        $(".veil").fadeOut(300)
     });
 
     //header category slide
@@ -17,7 +17,7 @@ $(function () {
     //click_ about rina
     $(".btn_aboutme").click(function () {
         $(".clickbg").fadeIn(300)
-        $(".photo").fadeIn(3000)
+        $(".photo").fadeIn(900)
         $(".aboutme").fadeIn(300)
     });
     $(".clickbg").click(function () {
