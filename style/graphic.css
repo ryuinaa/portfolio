@@ -196,7 +196,7 @@ input[type=checkbox] {
     top: 0px;
     right: 0;
     /* -  + */
-    background: url("../images/BG_blackred.jpg") no-repeat;
+    background: url("../images/bg_blackred.jpg") no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
