@@ -33,7 +33,7 @@ textarea,
 a,
 /* img, */
 .submit,button,
-label,.mainimg3,
+label,
 .nicescroll-rails:active {
     cursor: url("../cursor/pointer.cur"), progress !important;
 }
