@@ -67,15 +67,10 @@ $(function () {
         cursorcolor: "none",
         cursoropacitymax: 0.7
     });
-    $(".contents section div").niceScroll({
-        cursorwidth: "10",
-        cursorborder: "0",
-        cursorcolor: "none"
-    });
     $(".aboutme .info").niceScroll({
         cursorwidth: "10",
         cursorborder: "0px solid black",
-        cursorcolor: "none"
+        cursorcolor: "transparent"
     });
 
 
