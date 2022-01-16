@@ -1,5 +1,4 @@
 $(function () {
-
     //index [ keyhole hover > img ]
     $(".click").mouseover(function () {
         $(".veil").fadeIn(300)
@@ -10,9 +9,6 @@ $(function () {
 
     //header category slide
     $(".scroller").simplyScroll();
-
-
-
 
     //click_ about rina
     $(".btn_aboutme").click(function () {
@@ -56,20 +52,15 @@ $(function () {
         $(".qr").fadeOut(300)
     });
 
-
-
-
-
     //Nice Scroll
     $("html").niceScroll({
         cursorwidth: "15px",
         cursorborder: "3px solid black",
-        cursorcolor: "none",
-        cursoropacitymax: 0.7
+        cursorcolor: "none"
     });
     $(".aboutme .info").niceScroll({
-        cursorwidth: "10",
-        cursorborder: "0px solid black",
+        cursorwidth: "15",
+        cursorborder: "1px solid transparent",
         cursorcolor: "transparent"
     });
 

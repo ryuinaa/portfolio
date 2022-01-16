@@ -17,7 +17,6 @@
     <script src="script/script.js"></script>
     <script src="script/jquery.simplyscroll.min.js"></script>
     <script src="script/jquery.nicescroll.min.js"></script>
-
     <!-- Slick Slider 불러오기 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 
@@ -29,23 +28,19 @@
 
     <header class="header">
         <nav class="nav">
-            <ul class="scroller">
-                <li class="btn_aboutme" onmouseover="ddrivetip('Click', 40)" onmouseout="hideddrivetip()"><a href="#"
-                        data-content="RINA;">about <color>RINA</color></a></li>
-                <li class="btn_skill" onmouseover="ddrivetip('Click', 40)" onmouseout="hideddrivetip()"><a
-                        href="#">skills</a></li>
-                <li class="btn_port" onmouseover="ddrivetip('Click', 40)" onmouseout="hideddrivetip()"><a
-                        href="#">portfolio</a></li>
-                <li class="btn_contact" onmouseover="ddrivetip('Click', 40)" onmouseout="hideddrivetip()"><a
-                        href="#">contact</a></li>
-                <li class="btn_aboutme" onmouseover="ddrivetip('Click', 40)" onmouseout="hideddrivetip()"><a href="#"
-                        data-content="RINA;">about <color>RINA</color></a></li>
-                <li class="btn_skill" onmouseover="ddrivetip('Click', 40)" onmouseout="hideddrivetip()"><a
-                        href="#">skills</a></li>
-                <li class="btn_port" onmouseover="ddrivetip('Click', 40)" onmouseout="hideddrivetip()"><a
-                        href="#">portfolio</a></li>
-                <li class="btn_contact" onmouseover="ddrivetip('Click', 40)" onmouseout="hideddrivetip()"><a
-                        href="#">contact</a></li>
+            <ul class="scroller" onmouseover="ddrivetip('Click', 40)" onmouseout="hideddrivetip()">
+                <li class="btn_aboutme">
+                    <a href="#" data-content="RINA;">about <color>RINA</color></a>
+                </li>
+                <li class="btn_skill"><a href="#">skills</a></li>
+                <li class="btn_port"><a href="#">portfolio</a></li>
+                <li class="btn_contact"><a href="#">contact</a></li>
+                <li class="btn_aboutme">
+                    <a href="#" data-content="RINA;">about <color>RINA</color></a>
+                </li>
+                <li class="btn_skill"><a href="#">skills</a></li>
+                <li class="btn_port"><a href="#">portfolio</a></li>
+                <li class="btn_contact"><a href="#">contact</a></li>
             </ul>
         </nav>
 
@@ -183,11 +178,6 @@
                 </ul>
                 <ul class="tool">
                     <h1># Tools</h1>
-                    <!-- <li>Adobe Photoshop</li>
-                            <li>Adobe Illustrator</li>
-                            <li>GitHub</li>
-                            <li>Figma</li>
-                            <li>Visual Studio Code</li> -->
                     <li>
                         <p><img src="./images/psico.png" width=70px;></p>
                         <p><img src="./images/aiico.png" width=70px;></p>
@@ -209,7 +199,8 @@
                         <img src="images/beach.gif" alt="차애담">
                          </div> -->
                     <div>
-                        <a href="https://ryuinaa.github.io/melon/" onmouseover="ddrivetip('clone coding', 110)" onmouseout="hideddrivetip()">
+                        <a href="https://ryuinaa.github.io/melon/" target='_blank'
+                            onmouseover="ddrivetip('clone coding', 110)" onmouseout="hideddrivetip()">
                             <img src="images/thum11.jpg" alt="멜론">
                         </a>
                         <p class="pftitle">멜론 웹사이트 클론 코딩</p>
@@ -221,7 +212,8 @@
                         </p>
                     </div>
                     <div>
-                        <a href="https://ryuinaa.github.io/sidmool/" onmouseover="ddrivetip('renewal project', 140)" onmouseout="hideddrivetip()">
+                        <a href="https://ryuinaa.github.io/sidmool/" target='_blank'
+                            onmouseover="ddrivetip('renewal project', 140)" onmouseout="hideddrivetip()">
                             <img src="images/thum2.jpg" alt="시드물">
                         </a>
                         <p class="pftitle">화장품브랜드 시드물 웹 리뉴얼</p>
@@ -233,7 +225,8 @@
                         </p>
                     </div>
                     <div>
-                        <a href="#" onmouseover="ddrivetip('virtual website coding', 190)" onmouseout="hideddrivetip()">
+                        <a href="https://ryuinaa.github.io/pscake/" target='_blank'
+                            onmouseover="ddrivetip('virtual website coding', 190)" onmouseout="hideddrivetip()">
                             <img src="images/thum3.jpg" alt="p.s.Cake">
                         </a>
                         <p class="pftitle">p.s.Cake 웹사이트 제작</p>
@@ -241,11 +234,12 @@
                         <p class="pfsubtitle" style="text-align:left;">[제작기간] - </p>
                         <p class="pfsubtitle" style="text-align:left;">[개인작업] 미완성 / 제작중</p>
                         <p class="pfpost">
-                            p.s.Cake는 빈티지한 감성의 수제 레터링 케이크 전문점이라는 가정 하에 만들어진 가상의 케이크 전문 브랜드입니다.<br />웹 페이지를 제작 중입니다.
+                            p.s.Cake는 빈티지한 감성의 수제 레터링 케이크 전문점이라는 주제로 만들어진 가상의 케이크 전문 브랜드입니다.<br />웹 페이지를 제작 중입니다.
                         </p>
                     </div>
                     <div>
-                        <a href="#" onmouseover="ddrivetip('virtual website coding', 190)" onmouseout="hideddrivetip()">
+                        <a href="#" target='_blank' onmouseover="ddrivetip('virtual website coding', 190)"
+                            onmouseout="hideddrivetip()">
                             <img src="images/thum4.jpg" alt="ve;lunch">
                         </a>
                         <p class="pftitle">Ve;lunch PC, 모바일 반응형 제작</p>
@@ -257,7 +251,7 @@
                         </p>
                     </div>
                     <div>
-                        <a href="graphic.html" onmouseover="ddrivetip('Graphic Portfolio', 150)"
+                        <a href="graphic.html" target='_blank' onmouseover="ddrivetip('Graphic Portfolio', 150)"
                             onmouseout="hideddrivetip()">
                             <img src="images/zzzz.gif" alt="Graphic Portfolio" style="height:288px">
                         </a>
@@ -267,9 +261,6 @@
                         <p class="pfsubtitle" style="text-align:left;">[개인작업] 전체 100% 제작</p>
                         <p class="pfpost">
                             어도비 일러스트, 포토샵으로 작업한 결과물을 모아놓은 사이트입니다.
-                            <br />
-                            <a href="graphic.html" onmouseover="ddrivetip('click', 40)" onmouseout="hideddrivetip()">▶
-                                바로가기</a>
                         </p>
                     </div>
                 </div>
