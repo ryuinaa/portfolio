@@ -17,13 +17,13 @@ $(function () {
     //click_ about rina
     $(".btn_aboutme").click(function () {
         $(".clickbg").fadeIn(300)
-        $(".photo").fadeIn(900)
         $(".aboutme").fadeIn(300)
+        $(".photo").fadeIn(900)
     });
     $(".clickbg").click(function () {
         $(".clickbg").fadeOut(300)
-        $(".photo").fadeOut(300)
         $(".aboutme").fadeOut(300)
+        $(".photo").fadeOut(300)
     });
 
     //click_ Skill

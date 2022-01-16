@@ -116,11 +116,13 @@ midaji{display:none;}
     height: 100%;
     top: 0px;
     left: 0;
-    background: rgba(0, 0, 0, .3);
+    background: rgba(0, 0, 0, .0);
     transition: 1.5s ease;
     -o-transition: 1.5s ease;
     -moz-transition: 1.5s ease;
     -webkit-transition: 1.5s ease;
+    -webkit-backdrop-filter: blur(3px) brightness(50%) contrast(100%) opacity(0.1) drop-shadow(0 0 0 #880000);
+    backdrop-filter: blur(3px) brightness(50%) contrast(100%) opacity(0.1) drop-shadow(0 0 0 #880000);
 }
 
 .midaji_wrap_l {
@@ -132,14 +134,14 @@ midaji{display:none;}
     left: 0;
     /* -  + */
     /*background: rgba(192,0,11,.9);*/
-    background: url("../images/bg_blackred.jpg") no-repeat;
+    background: url("../images/tumblr_oa4bbvGGBN1vnfin5o1_500.jpg") no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     background-position: left center;
     background-attachment: fixed;
-    opacity: .7;
+    opacity: .9;
     transition: 1.5s ease;
     -o-transition: 1.5s ease;
     -moz-transition: 1.5s ease;
@@ -181,11 +183,13 @@ input[type=checkbox] {
     height: 100%;
     top: 0px;
     right: 0;
-    background: rgba(0, 0, 0, .3);
+    background: rgba(0, 0, 0, .0);
     transition: 1.5s ease;
     -o-transition: 1.5s ease;
     -moz-transition: 1.5s ease;
     -webkit-transition: 1.5s ease;
+    -webkit-backdrop-filter: blur(3px) brightness(50%) contrast(100%) opacity(0.1) drop-shadow(0 0 0 #880000);
+    backdrop-filter: blur(3px) brightness(50%) contrast(100%) opacity(0.1) drop-shadow(0 0 0 #880000);
 }
 
 .midaji_wrap_r {
@@ -196,7 +200,7 @@ input[type=checkbox] {
     top: 0px;
     right: 0;
     /* -  + */
-    background: url("../images/bg_blackred.jpg") no-repeat;
+    background: url("../images/tumblr_oa4bbvGGBN1vnfin5o1_500.jpg") no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -1408,7 +1412,7 @@ input[type=checkbox] {
     top: 0px;
     left: 0;
     /* -  + */
-    background: #ffbdd8;
+    background: #ffeaff;
     /*rgba(192,0,11,.0);*/
     /* 이미지 위로 컬러를 입힘 */
     opacity: .93;
@@ -1489,7 +1493,7 @@ input[type=checkbox] {
     top: 0px;
     right: 0;
     /* -  + */
-    background: #ffbdd8;
+    background: #ffeaff;
     /*rgba(192,0,11,.0);*/
     /* 이미지 위로 컬러를 입힘 */
     opacity: .93;
