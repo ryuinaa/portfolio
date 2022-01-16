@@ -46,6 +46,13 @@ html {
 .pdfwrap{
     margin-top:140px;
 }
+.pdf{
+    position:fixed;
+    top:calc(50% - 335px);
+    left:calc(50% - 40%);
+
+}
+
 
 
 .footer{
@@ -125,14 +132,14 @@ midaji{display:none;}
     left: 0;
     /* -  + */
     /*background: rgba(192,0,11,.9);*/
-    background: url("../images/BG_blackred.jpg") no-repeat;
+    background: url("../images/bg_blackred.jpg") no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     background-position: left center;
     background-attachment: fixed;
-    opacity: .9;
+    opacity: .7;
     transition: 1.5s ease;
     -o-transition: 1.5s ease;
     -moz-transition: 1.5s ease;
