@@ -184,7 +184,7 @@ body {
 } */
 .profilewrap {
     position: fixed;
-    z-index: 2;
+    z-index: 5;
     top: 200px;
     left: 50px;
     background: url("../images/framenote22.png")no-repeat;
@@ -303,9 +303,46 @@ body {
     background: url("../images/zzzzzz.gif")no-repeat;
     background-size: cover;
 }
-
-
 .profilewrap3 {
+    position: fixed;
+    z-index: 4;
+    bottom: 250px;
+    left: 580px;
+    background: url("../images/framenote22.png")no-repeat;
+    background-size: auto 100%;
+    /* width:25%;
+    height:40%; */
+    width: 350px;
+    height: 400px;
+}
+.mainimg3 {
+    width: 274px;
+    margin: 31px 8px 0px;
+    height: 358px;
+    background: url("../images/pinter03.gif")no-repeat;
+    background-size: cover;
+}
+.profilewrap4 {
+    position: fixed;
+    z-index: 5;
+    bottom: 400px;
+    right: 300px;
+    background: url("../images/framenote22.png")no-repeat;
+    background-size: auto 100%;
+    /* width:25%;
+    height:40%; */
+    width: 350px;
+    height: 400px;
+}
+.mainimg4 {
+    width: 274px;
+    margin: 31px 8px 0px;
+    height: 358px;
+    background: url("../images/pinter01.gif")no-repeat;
+    background-size: cover;
+}
+
+.chatbot {
     position: fixed;
     z-index: 5;
     bottom: 45px;
@@ -328,6 +365,7 @@ body {
     background: url("../images/030.gif")no-repeat;
     background-size: 100% 209px;
 }
+
 .qr {
     position: fixed;
     z-index: 10;
@@ -419,7 +457,7 @@ body {
     background: url("../images/bg_notepad.png")no-repeat;
     background-size: 100%;
     top: 130px;
-    right: 300px;
+    right: 450px;
     display: none;
 }
 
@@ -475,8 +513,8 @@ body {
 .photo {
     position: fixed;
     z-index: 6;
-    top: 180px;
-    right: 180px;
+    top: 280px;
+    right: 200px;
     background: url("../images/framenote22.png")no-repeat;
     background-size: auto 100%;
     /* width:25%;
